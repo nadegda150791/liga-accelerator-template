@@ -1,0 +1,68 @@
+.header__wrapper {
+  max-width: 1920px;
+  align-self: center;
+  padding: 30px 50px 45px;
+  background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+
+  @media screen and (max-width: 1023px) {
+    padding: 20px 53px 30px 50px;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 15px 18px 20px 26px;
+  }
+}
+
+.header__wrapper-index {
+  display: grid;
+  grid-template-columns: 31% 50% 15%;
+  max-width: 1220px;
+  margin: auto;
+
+  @media screen and (max-width: 1023px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.header__logo-link {
+  display: flex;
+  color: $color-triadic-white;
+}
+
+.header__logo-icon {
+  margin-right: 15px;
+
+  @media screen and (max-width: 767px) {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.header__logo-text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2px;
+
+  @media screen and (max-width: 767px) {
+   display: none;
+  }
+}
+
+.header__logo-text--1 {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 29px;
+}
+
+.header__logo-text--2 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
