@@ -1,0 +1,44 @@
+@media screen and (max-width: 767px) {
+  .accordion {
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+
+  .active, .accordion:hover {
+    background: $color-black-pearl;
+  }
+
+  .panel {
+    padding: 0;
+    background-color: $color-black-pearl;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .accordion::before,
+  .accordion::after {
+    content: " ";
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    right: 0;
+    top: 5px;
+    background: $color-alice-blue;
+    transition: transform 0.3s ease 0s;
+  }
+
+  .accordion::after {
+    transform: rotate(-90deg);
+  }
+
+  .active::after {
+    transform: rotate(0deg);
+  }
+}
+

@@ -39,6 +39,7 @@
   vertical-align: middle;
   text-decoration: none;
   color: $color-triadic-white;
+  cursor: pointer;
 }
 
 .site-navigation__link-icon {
@@ -69,6 +70,7 @@
   text-transform: uppercase;
   border: 1px solid $color-triadic-white;
   border-radius: 3px;
+  cursor: pointer;
 
   @media screen and (max-width: 1023px) {
     display: none;

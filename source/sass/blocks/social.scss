@@ -1,0 +1,36 @@
+@media screen and (max-width: 767px) {
+  .social {
+    padding-bottom: 19px;
+    border-bottom: 1px solid rgba(248, 253, 255, 0.7);
+  }
+}
+
+.social__list {
+  display: flex;
+  margin: 0;
+  margin-left: 5px;
+  padding: 0;
+
+  @media screen and (max-width: 767px) {
+    justify-content: center;
+  }
+}
+
+.social__item {
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+  list-style-type: none;
+
+  @media screen and (max-width: 1023px) {
+    margin-right: 4px;
+  }
+}
+
+.social__link {
+  cursor: pointer;
+}
+
+.social__icon {
+  margin: 10px;
+}
