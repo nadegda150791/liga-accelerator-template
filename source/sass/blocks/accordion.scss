@@ -1,5 +1,5 @@
 @media screen and (max-width: 767px) {
-  .accordion {
+  .accordion__title {
     cursor: pointer;
     position: relative;
     width: 100%;
@@ -9,8 +9,9 @@
     transition: 0.4s;
   }
 
-  .active, .accordion:hover {
-    background: $color-black-pearl;
+  .accordion.active .panel {
+    max-height: 3000px;
+    background: $color-black-pearl
   }
 
   .panel {
@@ -21,24 +22,23 @@
     transition: max-height 0.2s ease-out;
   }
 
-  .accordion::before,
-  .accordion::after {
+  .accordion__title::before,
+  .accordion__title::after {
     content: " ";
     position: absolute;
-    width: 20px;
+    width: 17px;
     height: 1px;
     right: 0;
-    top: 5px;
+    top: 4px;
     background: $color-alice-blue;
     transition: transform 0.3s ease 0s;
   }
 
-  .accordion::after {
+  .accordion__title::after {
     transform: rotate(-90deg);
   }
 
-  .active::after {
+  .active__title::after {
     transform: rotate(0deg);
   }
 }
-

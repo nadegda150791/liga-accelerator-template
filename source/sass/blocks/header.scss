@@ -1,16 +1,17 @@
 .header__wrapper {
   max-width: 1920px;
   align-self: center;
-  padding: 30px 50px 45px;
+  padding: 30px 50px 35px;
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+  z-index: 1;
 
   @media screen and (max-width: 1023px) {
-    padding: 20px 53px 30px 50px;
+    padding: 20px 53px 25px 50px;
     width: 100%;
   }
 
   @media screen and (max-width: 767px) {
-    padding: 15px 18px 20px 26px;
+    padding: 15px 18px 15px 26px;
   }
 }
 

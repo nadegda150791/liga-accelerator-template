@@ -1,0 +1,99 @@
+.main-unit {
+  max-width: 1070px;
+  margin: auto;
+  padding: 184px 50px 50px;
+
+  @media screen and (max-width: 1023px) {
+    padding: 80px 50px 50px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 80px 25px 50px;
+  }
+}
+
+.main-unit__title {
+  margin: 0 0 32px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: $color-triadic-white;
+
+  @media screen and (max-width: 1023px) {
+    margin: 0;
+    font-size: 64px;
+    line-height: 75px;
+  }
+
+  @media screen and (max-width: 767px) {
+    max-width: 250px;
+    margin-bottom: 8px;
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
+.main-unit__content {
+  max-width: 685px;
+  margin: 0 0 62px;
+  font-family: "PT Mono", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 155%;
+  color: $color-triadic-white;
+
+  @media screen and (max-width: 1023px) {
+    margin-bottom: 73px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 45px;
+    max-width: 270px;
+    font-size: 14px;
+  }
+}
+
+.main-unit__info {
+  padding: 16px 27px 17px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-triadic-white;
+  background: $color-deep-sky-blue;
+  border-radius: 3px;
+
+  @media screen and (max-width: 1023px) {
+    margin-left: 45px;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.main-unit__info-mobile {
+  display: none;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+    max-width: 270px;
+    margin: 0;
+    padding: 12px 30px 12px 38px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $color-triadic-white;
+    background: $color-deep-sky-blue;
+    border-radius: 3px;
+  }
+}
