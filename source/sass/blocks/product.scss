@@ -1,0 +1,159 @@
+.product {
+  padding: 65px 50px 140px;
+  background: $color-black-pearl;
+
+  @media screen and (max-width: 1023px) {
+    padding: 54px 50px 75px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 47px 25px 85px;
+  }
+}
+
+.product__wrapper {
+  margin: auto;
+  max-width: 1220px;
+}
+
+.product__title  {
+  margin: 0 0 54px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: $color-default-white;
+
+  @media screen and (max-width: 1023px) {
+    margin-bottom: 38px;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.product__title-index {
+  display: none;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 140.62%;
+  }
+
+  @media screen and (max-width: 374px) {
+    max-width: 200px;
+  }
+}
+
+.product__list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 85px;
+
+  @media screen and (max-width: 1023px) {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.product__item {
+  position: relative;
+  min-height: 650px;
+  padding: 47px 40px;
+  list-style-type: none;
+
+  @media screen and (max-width: 1023px) {
+    min-height: 250px;
+    padding: 37px 45px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 26px 30px;
+  }
+}
+
+.product__item--first {
+  background-image: url("/img/link-desctop-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media screen and (max-width: 1023px) {
+    background-image: url("/img/link-tablet-1.jpg");
+  }
+
+  @media screen and (max-width: 374px) {
+    background-image: url("/img/link-mobile-1.jpg");
+  }
+}
+
+.product__item--second {
+  background-image: url("/img/link-desctop-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media screen and (max-width: 1023px) {
+    background-image: url("/img/link-tablet-2.jpg");
+  }
+
+  @media screen and (max-width: 374px) {
+    background-image: url("/img/link-mobile-2.jpg");
+  }
+}
+
+.product__item--third {
+  background-image: url("/img/link-desctop-3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media screen and (max-width: 1023px) {
+    background-image: url("/img/link-tablet-3.jpg");
+  }
+
+  @media screen and (max-width: 374px) {
+    background-image: url("/img/link-mobile-3.jpg");
+  }
+}
+
+.product__heading {
+  max-width: 170px;
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: $color-default-white;
+
+  @media screen and (max-width: 1023px) {
+    max-width: 150px;
+  }
+
+  @media screen and (max-width: 767px) {
+    max-width: 135px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.product__toggel {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  bottom: 0;
+  right: 0;
+  background: $color-deep-sky-blue;
+  border: none;
+  border-radius: 3px 0px 0px 0px;
+  cursor: pointer;
+
+  @media screen and (max-width: 374px) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
