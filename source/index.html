@@ -50,7 +50,7 @@
                 </li>
               </ul>
             </nav>
-            <a class="site-navigation__link site-navigation__link--toggel" href="#">
+            <a class="site-navigation__link site-navigation__link--toggel" href="#" data-open-modal="feedback">
               Заказать звонок
             </a>
           </div>
@@ -126,7 +126,7 @@
           предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
         <p class="company__description company__description--index">Наши поставщики - мировые производители электронных
           компонентов: OSRAM, CREE,
-          HOLGLITRONIC, REFOND.<span>Печатные платы и комплектующие Service Devices применяются на предприятиях
+          HOLGLITRONIC, REFOND. <span>Печатные платы и комплектующие Service Devices применяются на предприятиях
             Российских
             Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов
             крупнейшие
@@ -188,19 +188,19 @@
 
     <section class="form">
       <div class="form__wrapper">
-        <img class="form__img" src="/img/paper-airplane.png" width="510" height="285" alt="Бумажный самолёт.">
+        <img class="form__img" src="/img/paper_airplane.svg" width="510" height="285" alt="Бумажный самолёт.">
         <div class="form__wrapper-index">
-          <a name="form"></a>
+          <a id="form"></a>
           <h2 class="form__title">Остались вопросы? Задайте их нам!</h2>
           <p class="form__description">Мы проконсультируем Вас бесплатно</p>
-          <div class="form__container">
+          <form class="form__container" data-form-validate method="POST">
             <p class="form__name">
               <label class="form__label" for="name"></label>
               <input class="form__input" type="text" id="name" name="name" required value="Имя">
             </p>
             <p class="form__name">
               <label class="form__label" for="tel"></label>
-              <input class="form__input" type="tel" name="tel" id="tel" value="Телефон" required>
+              <input class="form__input" type="phone" name="tel" id="tel" value="Телефон" required>
             </p>
             <p class="form__name form__name-index">
               <label class="visually-hidden" for="comment">Текст вопроса</label>
@@ -209,172 +209,163 @@
             <button class="form__toggel" type="submit">Задать вопрос</button>
             <p class="form__name">
               <label class="form__checkbox">
-                <input class="form__input visually-hidden" type="checkbox" name="form" checked="checked">
+                <input class="form__input visually-hidden" data-form-validate type="checkbox" name="form" checked="checked">
                 <span class="form__mark">
                 </span>
                 <span class="form__label form__label-checkbox">Я согласен на обработку персональных данных</span>
               </label>
             </p>
-          </div>
+          </form>
         </div>
       </div>
-      </form>
-    </section>
+  </div>
+  </form>
+  </section>
 
-    </main>
-    <footer class="main-footer">
-      <div class="main-footer__wrapper">
-        <div class="main-footer__wrapper-next">
-          <div class="main-footer__wrapper-index">
-            <div class="main-footer__logo logo-footer">
-              <a class="logo-footer__link" href="index.html">
-                <img class="logo-footer__icon" src="/img/svg/header/logo-mobile.svg" width="55" height="55"
-                  alt="Логотип компании.">
-                <div class="logo-footer__text">
-                  <span class="logo-footer__text logo-footer__text--1">Smart Device</span>
-                  <span class="logo-footer__text logo-footer__text--2">умные технологии</span>
+  </main>
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <div class="main-footer__wrapper-next">
+        <div class="main-footer__wrapper-index">
+          <div class="main-footer__logo logo-footer">
+            <a class="logo-footer__link" href="index.html">
+              <img class="logo-footer__icon" src="/img/svg/header/logo-mobile.svg" width="55" height="55"
+                alt="Логотип компании.">
+              <div class="logo-footer__text">
+                <span class="logo-footer__text logo-footer__text--1">Smart Device</span>
+                <span class="logo-footer__text logo-footer__text--2">умные технологии</span>
+              </div>
+            </a>
+          </div>
+          <div class="main-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <svg class="social__icon" width="30" height="30" viewBox="0 0 30 30"
+                    aria-label="Мы есть в одноклассниках" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="/img/sprite.svg#ok"></use>
+                  </svg>
+                  <span class="visually-hidden">Мы в Одноклассниках</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <svg class="social__icon" width="30" height="30" viewBox="0 0 30 30" aria-label="Мы есть в контакте"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="/img/sprite.svg#vk"></use>
+                  </svg>
+                  <span class="visually-hidden">Мы в Вконтакте</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <svg class="social__icon" width="30" height="30" viewBox="0 0 30 30" aria-label="Мы есть в пинтерест"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="/img/sprite.svg#pinterest"></use>
+                  </svg>
+                  <span class="visually-hidden">Мы в Pinterest</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="main-footer__cotainer">
+          <div class="main-footer__menu menu accordion">
+            <button type="button" class="menu__title accordion__title">Разделы сайта</button>
+            <div class="panel">
+              <ul class="menu__list">
+                <div class="menu__wrapper">
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">О Компании</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Продукты</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Производство печатных плат</a>
+                  </li>
+                  <li class="menu__item menu__item-index">
+                    <a class="menu__link" href="#">Монтаж печатных плат</a>
+                  </li>
                 </div>
-              </a>
+                <div class="menu__wrapper-index">
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Комплектующие</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Доставка</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Контакты</a>
+                  </li>
+                </div>
+              </ul>
             </div>
-            <div class="main-footer__social social">
-              <ul class="social__list">
-                <li class="social__item">
-                  <a class="social__link" href="#">
-                    <svg class="social__icon" width="30" height="30" viewBox="0 0 30 30"
-                      aria-label="Мы есть в одноклассниках" xmlns="http://www.w3.org/2000/svg">
-                      <use xlink:href="/img/sprite.svg#ok"></use>
-                    </svg>
-                    <span class="visually-hidden">Мы в Одноклассниках</span>
-                  </a>
+          </div>
+          <div class="main-footer__contacts contacts accordion">
+            <button type="button" class="contacts__title accordion__title">Наш офис</button>
+            <div class="panel">
+              <ul class="contacts__list">
+                <li class="contacts__item contacts__item-address">
+                  <a class="contacts__link contacts__link-address" href="#">г. Мытищи, Олимпийский проспект,
+                    <br>д.10</a>
                 </li>
-                <li class="social__item">
-                  <a class="social__link" href="#">
-                    <svg class="social__icon" width="30" height="30" viewBox="0 0 30 30" aria-label="Мы есть в контакте"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <use xlink:href="/img/sprite.svg#vk"></use>
-                    </svg>
-                    <span class="visually-hidden">Мы в Вконтакте</span>
-                  </a>
+                <li class="contacts__item">
+                  <a class="contacts__link contacts__link-telephone" href="tel:+74955894050">+7 (495) 589-40-50</a>
                 </li>
-                <li class="social__item">
-                  <a class="social__link" href="#">
-                    <svg class="social__icon" width="30" height="30" viewBox="0 0 30 30"
-                      aria-label="Мы есть в пинтерест" xmlns="http://www.w3.org/2000/svg">
-                      <use xlink:href="/img/sprite.svg#pinterest"></use>
-                    </svg>
-                    <span class="visually-hidden">Мы в Pinterest</span>
-                  </a>
+                <li class="contacts__item">
+                  <a class="contacts__link contacts__link-telephone" href="tel:+79253895829">+7 (925) 389-58-29</a>
+                </li>
+                <li class="contacts__item">
+                  <a class="contacts__link contacts__link-telephone" href="tel:+79253647813">+7 (925) 364-78-13</a>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="main-footer__cotainer">
-            <div class="main-footer__menu menu accordion">
-              <button type="button" class="menu__title accordion__title">Разделы сайта</button>
-              <div class="panel">
-                <ul class="menu__list">
-                  <div class="menu__wrapper">
-                    <li class="menu__item">
-                      <a class="menu__link" href="#">О Компании</a>
-                    </li>
-                    <li class="menu__item">
-                      <a class="menu__link" href="#">Продукты</a>
-                    </li>
-                    <li class="menu__item">
-                      <a class="menu__link" href="#">Производство печатных плат</a>
-                    </li>
-                    <li class="menu__item menu__item-index">
-                      <a class="menu__link" href="#">Монтаж печатных плат</a>
-                    </li>
-                  </div>
-                  <div class="menu__wrapper-index">
-                    <li class="menu__item">
-                      <a class="menu__link" href="#">Комплектующие</a>
-                    </li>
-                    <li class="menu__item">
-                      <a class="menu__link" href="#">Доставка</a>
-                    </li>
-                    <li class="menu__item">
-                      <a class="menu__link" href="#">Контакты</a>
-                    </li>
-                  </div>
-                </ul>
-              </div>
-            </div>
-            <div class="main-footer__contacts contacts accordion">
-              <button type="button" class="contacts__title accordion__title">Наш офис</button>
-              <div class="panel">
-                <ul class="contacts__list">
-                  <li class="contacts__item contacts__item-address">
-                    <a class="contacts__link contacts__link-address" href="#">г. Мытищи, Олимпийский проспект,
-                      <br>д.10</a>
-                  </li>
-                  <li class="contacts__item">
-                    <a class="contacts__link contacts__link-telephone" href="tel:+74955894050">+7 (495) 589-40-50</a>
-                  </li>
-                  <li class="contacts__item">
-                    <a class="contacts__link contacts__link-telephone" href="tel:+79253895829">+7 (925) 389-58-29</a>
-                  </li>
-                  <li class="contacts__item">
-                    <a class="contacts__link contacts__link-telephone" href="tel:+79253647813">+7 (925) 364-78-13</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
-    </footer>
-  </div>
-
-  <!-- Модалки -->
-  <!-- <section class="intro">
-    <div class="container">
-      <h1>Тестовая страница.</h1>
-      <p>На данной странице показан пример модальных окон.</p>
-      <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-      <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-      <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
     </div>
-  </section> -->
+  </footer>
+  </div>
 
   <div class="modal modal--preload" data-modal="feedback">
     <div class="modal__wrapper">
       <div class="modal__overlay" data-close-modal></div>
       <div class="modal__content">
-        <p class="modal__description">Обычная модалка</p>
         <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-          <svg width="15" height="15">
-            <use xlink:href="img/sprite.svg#icon-close"></use>
+          <svg class="modal__icon" width="15" height="15">
+            <use xlink:href="/img/sprite.svg#icon-close"></use>
           </svg>
         </button>
         <h2 class="modal__title">Закажите звонок</h2>
         <p class="modal__description">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-        <p class="modal__name">
-          <label class="modal__label" for="name"></label>
-          <input class="modal__input" type="text" id="name" name="name" required value="Имя">
-        </p>
-        <p class="modal__name">
-          <label class="modal__label" for="tel"></label>
-          <input class="modal__input" type="tel" name="tel" id="tel" value="Телефон" required>
-        </p>
-        <p class="modal__name">
-          <label class="visually-hidden" for="comment">Текст вопроса</label>
-          <textarea class="modal__textarea" name="comment" id="comment" rows="5">Ваш вопрос</textarea>
-        </p>
-        <button class="modal__toggel" type="submit">Задать вопрос</button>
-        <p>
-          <label class="modal__checkbox">
-            <input class="modal__input" type="checkbox" name="form" checked="checked">
-            <span class="modal__mark"></span>
-            <span class="modal__label">Я согласен на обработку персональных данных</span>
-          </label>
-        </p>
+        <form id="form" data-form-validate  method="POST">
+          <p class="modal__name">
+            <label class="modal__label" for="name"></label>
+            <input class="modal__input" type="text" id="name" name="name" required value="Имя" autofocus>
+          </p>
+          <p class="modal__name">
+            <label class="modal__label" for="tel"></label>
+            <input class="modal__input" type="phone" name="tel" id="tel" value="Телефон" required>
+          </p>
+          <p class="modal__name">
+            <label class="visually-hidden" for="comment">Текст вопроса</label>
+            <textarea class="modal__textarea" name="comment" id="comment" rows="5">Ваш вопрос</textarea>
+          </p>
+          <button class="modal__toggel" type="submit">Отправить</button>
+          <p>
+            <label class="modal__checkbox">
+              <input class="modal__input visually-hidden" type="checkbox" name="form" checked="checked">
+              <span class="modal__mark"></span>
+              <span class="modal__label-checkbox">Я согласен на обработку персональных данных</span>
+            </label>
+          </p>
+        </form>
       </div>
     </div>
   </div>
 
-  <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
+  <!-- <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
     <div class="modal__wrapper">
       <div class="modal__overlay" data-close-modal></div>
       <div class="modal__content">
@@ -386,7 +377,7 @@
         </button>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>

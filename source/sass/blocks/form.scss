@@ -1,13 +1,13 @@
 .form {
   padding: 164px 50px 249px;
-  background-color: #00B3FF;
+  background: linear-gradient(-41deg, $color-deep-sky-blue 1259px, $color-allports 10px);
 
   @media screen and (max-width: 1023px) {
     padding: 45px 50px 125px;
   }
 
   @media screen and (max-width: 767px) {
-    padding: 48px 25px 87px;
+    padding: 48px 25px 88px;
   }
 }
 
@@ -26,8 +26,7 @@
 }
 
 .form__img {
-  margin-right: 110px;
-  transform: rotate(18deg);
+  margin: 22px 120px 0 -10px;
 
   @media screen and (max-width: 1023px) {
     display: none;
@@ -53,7 +52,7 @@
 }
 
 .form__description {
-  margin: 0 0 33px;
+  margin: 0 0 35px;
   padding: 0;
   font-family: "PT Mono", sans-serif;
   font-weight: 400;
@@ -62,11 +61,11 @@
   color: $color-default-white;
 
   @media screen and (max-width: 1023px) {
-    margin-bottom: 24px;
+    margin-bottom: 25px;
   }
 
   @media screen and (max-width: 767px) {
-    margin-bottom: 31px;
+    margin-bottom: 33px;
     font-size: 14px;
     line-height: 134.4%;
   }
@@ -90,7 +89,7 @@
 }
 
 .form__input {
-  padding: 15px;
+  padding: 13px 15px 15px;
   width: 100%;
   font-family: "PT Mono", sans-serif;
   font-weight: 400;
@@ -124,6 +123,7 @@
   }
 
   @media screen and (max-width: 767px) {
+    margin-top: 1px;
     min-height: 180px;
     padding: 24px 15px;
   }
@@ -148,7 +148,8 @@
   cursor: pointer;
 
   @media screen and (max-width: 1023px) {
-    padding: 15px 25px 10px;
+    margin-top: 8px;
+    padding: 16px 25px 10px;
   }
 
   @media screen and (max-width: 767px) {
@@ -197,7 +198,7 @@
 
 .form__label-checkbox {
   margin-left: 36px;
-  font-family: 'PT Mono';
+  font-family: "PT Mono", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;

@@ -681,8 +681,9 @@ button,
 
 .modal {
   position: fixed;
+  padding-top: 44px;
   top: 0;
-  right: 0;
+  right: 16px;
   bottom: 0;
   left: 0;
   z-index: 1000;
@@ -745,14 +746,14 @@ button,
 .modal__content {
   position: relative;
   width: 600px;
-  padding: 40px;
+  padding: 35px 40px 28px;
   background-color: #ffffff;
 }
 
 .modal__close-btn {
   position: absolute;
-  top: 22px;
-  right: 22px;
+  top: 17px;
+  right: 15px;
   z-index: 1;
   width: 40px;
   height: 40px;
@@ -789,6 +790,127 @@ button,
   visibility: visible;
   opacity: 1;
   pointer-events: auto;
+}
+
+.modal__wrapper {
+  max-width: 580px;
+  margin: auto;
+}
+
+.modal__content {
+  position: relative;
+  background: #00B3FF;
+  border-radius: 3px;
+}
+
+.modal__icon {
+  width: 20px;
+  height: 20px;
+}
+
+.modal__title {
+  margin: 0 0 4px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 140.62%;
+  color: #ffffff;
+}
+
+.modal__description {
+  max-width: 380px;
+  margin: 0 0 38px;
+  padding: 0;
+  font-family: "PT Mono", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.modal__name {
+  margin: 0;
+  padding: 0;
+}
+
+.modal__input {
+  margin: 0 0 20px;
+  padding: 13px 15px 15px;
+  width: 100%;
+  font-family: "PT Mono", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  background: rgba(4, 20, 39, 0.15);
+  border-radius: 3px;
+  border: none;
+}
+
+.modal__textarea {
+  min-height: 155px;
+  padding: 23px 15px;
+  width: 100%;
+  font-family: "PT Mono", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  background: rgba(4, 20, 39, 0.15);
+  border-radius: 3px;
+  border: none;
+}
+
+.modal__toggel {
+  margin: 17px 0 0;
+  padding: 15px 25px 11px;
+  width: 100%;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #041427;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+.modal__checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-top: 22px;
+}
+
+.modal__mark {
+  position: absolute;
+  top: -2px;
+  left: 10px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #ffffff;
+}
+
+.modal__input[type=checkbox]:checked + .modal__mark {
+  position: absolute;
+  background-image: url("/img/svg/check-mark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.modal__label-checkbox {
+  margin: -2px 0 0 36px;
+  font-family: "PT Mono", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  opacity: 0.8;
 }
 
 .custom-input,
@@ -1419,12 +1541,12 @@ button,
 }
 
 .main-footer__wrapper {
-  padding: 50px 30px 55px;
+  padding: 50px 30px 42px;
   max-width: 1920px;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
-  background-color: #041827;
+  background-color: #041427;
 }
 
 .main-footer__wrapper-next {
@@ -1650,7 +1772,7 @@ button,
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #f2f5f6;
-  background: #00b2ff;
+  background: #00B3FF;
   border-radius: 3px;
 }
 
@@ -1694,12 +1816,12 @@ button,
 
 .advantages__item:hover,
 .advantages__item:focus {
-  background: #00b2ff;
+  background: #00B3FF;
   color: #f2f5f6;
 }
 
 .advantages__icon {
-  fill: #00b2ff;
+  fill: #00B3FF;
 }
 
 .advantages__item-title {
@@ -1708,7 +1830,7 @@ button,
   font-weight: 400;
   font-size: 24px;
   line-height: 34px;
-  color: #00b2ff;
+  color: #00B3FF;
 }
 
 .advantages__item-description {
@@ -1717,7 +1839,7 @@ button,
   font-weight: 400;
   font-size: 16px;
   line-height: 135%;
-  color: #041827;
+  color: #041427;
 }
 
 .advantages__item::after {
@@ -1727,7 +1849,7 @@ button,
   height: 100%;
   top: 0;
   left: 0;
-  background: #00b2ff;
+  background: #00B3FF;
 }
 
 .advantages__icon--detective {
@@ -1766,7 +1888,7 @@ button,
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;
-  color: #041827;
+  color: #041427;
 }
 
 .company__description {
@@ -1775,7 +1897,7 @@ button,
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  color: #041827;
+  color: #041427;
 }
 
 .company__toggel {
@@ -1789,8 +1911,8 @@ button,
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #00b2ff;
-  border: 1px solid #00b2ff;
+  color: #00B3FF;
+  border: 1px solid #00B3FF;
   border-radius: 3px;
   cursor: pointer;
 }
@@ -1801,7 +1923,7 @@ button,
 
 .product {
   padding: 65px 50px 140px;
-  background: #041827;
+  background: #041427;
 }
 
 .product__wrapper {
@@ -1873,7 +1995,7 @@ button,
   height: 60px;
   bottom: 0;
   right: 0;
-  background: #00b2ff;
+  background: #00B3FF;
   border: none;
   border-radius: 3px 0px 0px 0px;
   cursor: pointer;
@@ -1881,7 +2003,8 @@ button,
 
 .form {
   padding: 164px 50px 249px;
-  background-color: #00B3FF;
+  background: -o-linear-gradient(131deg, #00B3FF 1259px, #106591 10px);
+  background: linear-gradient(-41deg, #00B3FF 1259px, #106591 10px);
 }
 
 .form__wrapper {
@@ -1897,10 +2020,7 @@ button,
 }
 
 .form__img {
-  margin-right: 110px;
-  -webkit-transform: rotate(18deg);
-  -ms-transform: rotate(18deg);
-  transform: rotate(18deg);
+  margin: 22px 120px 0 -10px;
 }
 
 .form__title {
@@ -1913,7 +2033,7 @@ button,
 }
 
 .form__description {
-  margin: 0 0 33px;
+  margin: 0 0 35px;
   padding: 0;
   font-family: "PT Mono", sans-serif;
   font-weight: 400;
@@ -1936,7 +2056,7 @@ button,
 }
 
 .form__input {
-  padding: 15px;
+  padding: 13px 15px 15px;
   width: 100%;
   font-family: "PT Mono", sans-serif;
   font-weight: 400;
@@ -1981,7 +2101,7 @@ button,
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #ffffff;
-  background: #041827;
+  background: #041427;
   border-radius: 3px;
   border: none;
   cursor: pointer;
@@ -2013,7 +2133,7 @@ button,
 
 .form__label-checkbox {
   margin-left: 36px;
-  font-family: "PT Mono";
+  font-family: "PT Mono", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
@@ -2135,7 +2255,7 @@ button,
   }
 
   .main-footer__wrapper {
-    padding: 50px 37px 65px 50px;
+    padding: 50px 37px 55px 50px;
   }
 
   .main-footer__wrapper-next {
@@ -2175,6 +2295,7 @@ button,
   }
 
   .contacts {
+    margin-right: 38px;
     max-width: 345px;
   }
 
@@ -2308,7 +2429,7 @@ button,
   }
 
   .form__description {
-    margin-bottom: 24px;
+    margin-bottom: 25px;
   }
 
   .form__textarea {
@@ -2316,7 +2437,8 @@ button,
   }
 
   .form__toggel {
-    padding: 15px 25px 10px;
+    margin-top: 8px;
+    padding: 16px 25px 10px;
   }
 
   .form__checkbox {
@@ -2524,12 +2646,12 @@ button,
 
   .accordion.active .panel {
     max-height: 3000px;
-    background: #041827;
+    background: #041427;
   }
 
   .panel {
     padding: 0;
-    background-color: #041827;
+    background-color: #041427;
     max-height: 0;
     overflow: hidden;
     -webkit-transition: max-height 0.2s ease-out;
@@ -2598,7 +2720,7 @@ button,
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: #f2f5f6;
-    background: #00b2ff;
+    background: #00B3FF;
     border-radius: 3px;
   }
 
@@ -2701,7 +2823,7 @@ button,
   }
 
   .form {
-    padding: 48px 25px 87px;
+    padding: 48px 25px 88px;
   }
 
   .form__title {
@@ -2710,7 +2832,7 @@ button,
   }
 
   .form__description {
-    margin-bottom: 31px;
+    margin-bottom: 33px;
     font-size: 14px;
     line-height: 134.4%;
   }
@@ -2727,6 +2849,7 @@ button,
   }
 
   .form__textarea {
+    margin-top: 1px;
     min-height: 180px;
     padding: 24px 15px;
   }
