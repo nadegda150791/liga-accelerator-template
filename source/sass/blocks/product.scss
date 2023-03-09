@@ -16,9 +16,9 @@
   max-width: 1220px;
 }
 
-.product__title  {
+.product__title {
   margin: 0 0 54px;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;
@@ -83,19 +83,19 @@
   background-size: cover;
   background-repeat: no-repeat;
 
-  @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("/img/link-desktop-1-2x.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
 
-  @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("/img/link-desktop-1.webp");
     background-size: cover;
     background-repeat: no-repeat;
   }
 
-  @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("/img/link-desktop-1-2x.webp");
     background-size: cover;
     background-repeat: no-repeat;
@@ -104,15 +104,15 @@
   @media screen and (max-width: 1023px) {
     background-image: url("/img/link-tablet-1.jpg");
 
-    @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("/img/link-tablet-1-2x.jpg");
     }
 
-    @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("/img/link-tablet-1.webp");
     }
 
-    @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("/img/link-tablet-1-2x.webp");
     }
   }
@@ -120,15 +120,15 @@
   @media screen and (max-width: 374px) {
     background-image: url("/img/link-mobile-1.jpg");
 
-    @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("/img/link-mobile-1-2x.jpg");
     }
 
-    @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("/img/link-mobile-1.webp");
     }
 
-    @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("/img/link-mobile-1-2x.webp");
     }
   }
@@ -139,19 +139,19 @@
   background-size: cover;
   background-repeat: no-repeat;
 
-  @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("/img/link-desktop-2-2x.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
 
-  @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("/img/link-desktop-2.webp");
     background-size: cover;
     background-repeat: no-repeat;
   }
 
-  @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("/img/link-desktop-2-2x.webp");
     background-size: cover;
     background-repeat: no-repeat;
@@ -160,15 +160,15 @@
   @media screen and (max-width: 1023px) {
     background-image: url("/img/link-tablet-2.jpg");
 
-    @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("/img/link-tablet-2-2x.jpg");
     }
 
-    @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("/img/link-tablet-2.webp");
     }
 
-    @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("/img/link-tablet-2-2x.webp");
     }
   }
@@ -176,15 +176,15 @@
   @media screen and (max-width: 374px) {
     background-image: url("/img/link-mobile-2.jpg");
 
-    @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("/img/link-mobile-2-2x.jpg");
     }
 
-    @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("/img/link-mobile-2.webp");
     }
 
-    @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("/img/link-mobile-2-2x.webp");
     }
   }
@@ -195,19 +195,19 @@
   background-size: cover;
   background-repeat: no-repeat;
 
-  @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("/img/link-desktop-3-2x.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
 
-  @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("/img/link-desktop-3.webp");
     background-size: cover;
     background-repeat: no-repeat;
   }
 
-  @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("/img/link-desktop-3-2x.webp");
     background-size: cover;
     background-repeat: no-repeat;
@@ -217,15 +217,15 @@
   @media screen and (max-width: 1023px) {
     background-image: url("/img/link-tablet-3.jpg");
 
-    @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("/img/link-tablet-3-2x.jpg");
     }
 
-    @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("/img/link-tablet-3.webp");
     }
 
-    @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("/img/link-tablet-3-2x.webp");
     }
   }
@@ -233,15 +233,15 @@
   @media screen and (max-width: 374px) {
     background-image: url("/img/link-mobile-3.jpg");
 
-    @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("/img/link-mobile-3-2x.jpg");
     }
 
-    @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("/img/link-mobile-3.webp");
     }
 
-    @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("/img/link-mobile-3-2x.webp");
     }
   }
@@ -250,7 +250,7 @@
 .product__heading {
   max-width: 170px;
   margin: 0;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
@@ -275,7 +275,7 @@
   right: 0;
   background: $color-deep-sky-blue;
   border: none;
-  border-radius: 3px 0px 0px 0px;
+  border-radius: 3px 0 0 0;
   cursor: pointer;
 
   @media screen and (max-width: 374px) {
@@ -283,4 +283,3 @@
     height: 40px;
   }
 }
-

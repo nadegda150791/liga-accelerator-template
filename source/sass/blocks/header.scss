@@ -26,8 +26,8 @@
 
 .header__wrapper-index {
   display: grid;
-  grid-template-columns: 30% 50% 15%;
-  max-width: 1240px;
+  grid-template-columns: 31% 50% 16%;
+  max-width: 1220px;
   margin: auto;
 
   @media screen and (max-width: 1023px) {
@@ -57,12 +57,12 @@
   margin-top: 2px;
 
   @media screen and (max-width: 767px) {
-   display: none;
+    display: none;
   }
 }
 
 .header__logo-text--1 {
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 25px;
@@ -70,10 +70,32 @@
 }
 
 .header__logo-text--2 {
-  font-family: 'Roboto';
+  font-family: "Roboto", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 14px;
   color: rgba(255, 255, 255, 0.7);
+}
+
+.header__link--toggel {
+  max-width: 160px;
+  margin-left: 13px;
+  margin-top: 5px;
+  max-height: 40px;
+  padding: 10px 15px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-triadic-white;
+  border: 1px solid $color-triadic-white;
+  border-radius: 3px;
+  cursor: pointer;
+
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
 }
