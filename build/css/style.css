@@ -681,9 +681,9 @@ button,
 
 .modal {
   position: fixed;
-  padding-top: 44px;
+  padding-top: 43px;
   top: 0;
-  right: 16px;
+  right: 35px;
   bottom: 0;
   left: 0;
   z-index: 1000;
@@ -1448,9 +1448,9 @@ button,
 .header__wrapper-index {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 31% 50% 15%;
-  grid-template-columns: 31% 50% 15%;
-  max-width: 1220px;
+  -ms-grid-columns: 30% 50% 15%;
+  grid-template-columns: 30% 50% 15%;
+  max-width: 1240px;
   margin: auto;
 }
 
@@ -1508,6 +1508,7 @@ button,
 }
 
 .site-navigation__item {
+  margin-bottom: 10px;
   list-style-type: none;
 }
 
@@ -1530,7 +1531,7 @@ button,
 
 .site-navigation__link--toggel {
   max-width: 160px;
-  margin-left: 13px;
+  margin-left: 10px;
   margin-top: 5px;
   max-height: 40px;
   padding: 10px 15px;
@@ -1624,6 +1625,8 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: 0;
   margin-left: 5px;
   padding: 0;
@@ -2099,9 +2102,9 @@ button,
 
 .form__toggel {
   margin-top: 7px;
-  max-height: 45px;
+  min-height: 45px;
   max-width: 265px;
-  padding: 15px 25px;
+  padding: 15px 25px 13px;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -2300,6 +2303,10 @@ button,
 
   .logo-footer__link {
     margin-bottom: 31px;
+  }
+
+  .social__list {
+    max-width: 350px;
   }
 
   .social__item {
@@ -2677,6 +2684,7 @@ button,
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    max-width: 700px;
   }
 
   .menu {
@@ -2772,7 +2780,7 @@ button,
   }
 
   .main-unit {
-    padding: 80px 25px 50px;
+    padding: 70px 25px 50px;
   }
 
   .main-unit__title {
