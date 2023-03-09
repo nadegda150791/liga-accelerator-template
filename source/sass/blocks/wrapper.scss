@@ -6,13 +6,61 @@
   background-repeat: no-repeat;
   z-index: 1;
 
+  @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%),
+    url("/img/background-desktop-2x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+
+  @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%),
+    url("/img/background-desktop.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+
+  @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%),
+    url("/img/background-desktop-2x.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+
   @media screen and (max-width: 1023px) {
     min-height: 640px;
     background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%),
     url("/img/background-tablet.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    z-index: 1;
+    z-index: 2;
+
+    @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%),
+      url("/img/background-tablet-2x.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: 2;
+    }
+
+    @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%),
+      url("/img/background-tablet.webp");
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: 2;
+    }
+
+    @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%),
+      url("/img/background-tablet-2x.webp");
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: 2;
+    }
   }
 
   @media screen and (max-width: 374px) {
@@ -21,6 +69,30 @@
     url("/img/background-mobile.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    z-index: 1;
+    z-index: 3;
+
+    @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%),
+      url("/img/background-mobile-2x.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: 3;
+    }
+
+    @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%),
+      url("/img/background-mobile.webp");
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: 3;
+    }
+
+    @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%),
+      url("/img/background-mobile-2x.webp");
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: 3;
+    }
   }
 }

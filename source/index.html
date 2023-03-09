@@ -60,10 +60,12 @@
       <main class="main">
         <h1 class="visually-hidden">Печатные платы</h1>
         <section class="main-unit">
-          <h2 class="main-unit__title">Печатные платы</h2>
-          <p class="main-unit__content">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          <a class="main-unit__info" href="#form">Получить бесплатную консультацию</a>
-          <a class="main-unit__info-mobile" href="#form">Бесплатная консультация</a>
+          <div class="main-unit__wrapper">
+            <h2 class="main-unit__title">Печатные платы</h2>
+            <p class="main-unit__content">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+            <a class="main-unit__info" href="#form">Получить бесплатную консультацию</a>
+            <a class="main-unit__info-mobile" href="#form">Бесплатная консультация</a>
+          </div>
         </section>
     </div>
 
@@ -186,14 +188,14 @@
       </div>
     </section>
 
-    <section class="form">
+    <section class="form" id="form">
       <div class="form__wrapper">
         <img class="form__img" src="/img/paper_airplane.svg" width="510" height="285" alt="Бумажный самолёт.">
         <div class="form__wrapper-index">
-          <a id="form"></a>
           <h2 class="form__title">Остались вопросы? Задайте их нам!</h2>
           <p class="form__description">Мы проконсультируем Вас бесплатно</p>
-          <form class="form__container" data-form-validate method="POST">
+          <form class="form__container" action="https://27.javascript.pages.academy/liga-accelerator-template"
+            data-form-validate method="POST">
             <p class="form__name">
               <label class="form__label" for="name"></label>
               <input class="form__input" type="text" id="name" name="name" required value="Имя">
@@ -209,7 +211,8 @@
             <button class="form__toggel" type="submit">Задать вопрос</button>
             <p class="form__name">
               <label class="form__checkbox">
-                <input class="form__input visually-hidden" data-form-validate type="checkbox" name="form" checked="checked">
+                <input class="form__input visually-hidden" type="checkbox" name="form"
+                  checked="checked">
                 <span class="form__mark">
                 </span>
                 <span class="form__label form__label-checkbox">Я согласен на обработку персональных данных</span>
@@ -219,7 +222,6 @@
         </div>
       </div>
   </div>
-  </form>
   </section>
 
   </main>
@@ -339,7 +341,8 @@
         </button>
         <h2 class="modal__title">Закажите звонок</h2>
         <p class="modal__description">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-        <form id="form" data-form-validate  method="POST">
+        <form id="form" data-form-validate action="https://27.javascript.pages.academy/liga-accelerator-template"
+          method="POST">
           <p class="modal__name">
             <label class="modal__label" for="name"></label>
             <input class="modal__input" type="text" id="name" name="name" required value="Имя" autofocus>

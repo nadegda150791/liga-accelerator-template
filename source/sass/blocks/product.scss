@@ -79,44 +79,171 @@
 }
 
 .product__item--first {
-  background-image: url("/img/link-desctop-1.jpg");
+  background-image: url("/img/link-desktop-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 
+  @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("/img/link-desktop-1-2x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("/img/link-desktop-1.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("/img/link-desktop-1-2x.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
   @media screen and (max-width: 1023px) {
     background-image: url("/img/link-tablet-1.jpg");
+
+    @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("/img/link-tablet-1-2x.jpg");
+    }
+
+    @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("/img/link-tablet-1.webp");
+    }
+
+    @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("/img/link-tablet-1-2x.webp");
+    }
   }
 
   @media screen and (max-width: 374px) {
     background-image: url("/img/link-mobile-1.jpg");
+
+    @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("/img/link-mobile-1-2x.jpg");
+    }
+
+    @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("/img/link-mobile-1.webp");
+    }
+
+    @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("/img/link-mobile-1-2x.webp");
+    }
   }
 }
 
 .product__item--second {
-  background-image: url("/img/link-desctop-2.jpg");
+  background-image: url("/img/link-desktop-2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 
+  @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("/img/link-desktop-2-2x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("/img/link-desktop-2.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("/img/link-desktop-2-2x.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
   @media screen and (max-width: 1023px) {
     background-image: url("/img/link-tablet-2.jpg");
+
+    @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("/img/link-tablet-2-2x.jpg");
+    }
+
+    @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("/img/link-tablet-2.webp");
+    }
+
+    @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("/img/link-tablet-2-2x.webp");
+    }
   }
 
   @media screen and (max-width: 374px) {
     background-image: url("/img/link-mobile-2.jpg");
+
+    @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("/img/link-mobile-2-2x.jpg");
+    }
+
+    @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("/img/link-mobile-2.webp");
+    }
+
+    @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("/img/link-mobile-2-2x.webp");
+    }
   }
 }
 
 .product__item--third {
-  background-image: url("/img/link-desctop-3.jpg");
+  background-image: url("/img/link-desktop-3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 
+  @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("/img/link-desktop-3-2x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("/img/link-desktop-3.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("/img/link-desktop-3-2x.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+
   @media screen and (max-width: 1023px) {
     background-image: url("/img/link-tablet-3.jpg");
+
+    @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("/img/link-tablet-3-2x.jpg");
+    }
+
+    @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("/img/link-tablet-3.webp");
+    }
+
+    @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("/img/link-tablet-3-2x.webp");
+    }
   }
 
   @media screen and (max-width: 374px) {
     background-image: url("/img/link-mobile-3.jpg");
+
+    @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("/img/link-mobile-3-2x.jpg");
+    }
+
+    @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("/img/link-mobile-3.webp");
+    }
+
+    @media  (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("/img/link-mobile-3-2x.webp");
+    }
   }
 }
 

@@ -1,5 +1,14 @@
+.header {
+  position: fixed;
+  width: 100%;
+
+  @media screen and (max-width: 1439px) {
+    position: relative;
+  }
+}
+
 .header__wrapper {
-  max-width: 1920px;
+  width: 100%;
   align-self: center;
   padding: 30px 50px 35px;
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);

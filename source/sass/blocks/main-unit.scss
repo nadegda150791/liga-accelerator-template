@@ -1,7 +1,10 @@
 .main-unit {
-  max-width: 1070px;
-  margin: auto;
+  margin-top: 120px;
   padding: 184px 50px 50px;
+
+  @media screen and (max-width: 1439px) {
+    margin-top: 0;
+  }
 
   @media screen and (max-width: 1023px) {
     padding: 80px 50px 50px;
@@ -10,6 +13,11 @@
   @media screen and (max-width: 767px) {
     padding: 80px 25px 50px;
   }
+}
+
+.main-unit__wrapper {
+  max-width: 970px;
+  margin: auto;
 }
 
 .main-unit__title {
