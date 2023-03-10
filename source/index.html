@@ -332,11 +332,13 @@
         <form id="form" action="https://echo.htmlacademy.ru/liga-accelerator-template" method="POST">
           <p class="modal__name">
             <label class="modal__label" for="name"></label>
-            <input class="modal__input" type="text" id="name" name="name" required placeholder="Имя" autofocus>
+            <input class="modal__input" type="text" id="name" name="name" data-required minlength="2"
+            maxlength="20" placeholder="Имя" autofocus>
           </p>
           <p class="modal__name">
-            <label class="modal__label" for="tel"></label>
-            <input class="modal__input" type="phone" name="tel" id="tel" placeholder="Телефон" required>
+            <label class="modal__label" for="phone"></label>
+            <input class="modal__input" type="phone" name="phone" id="phone" placeholder="Телефон" data-validator="regexp"
+            data-validator-pattern="^\+7\\d{10}$" data-required>
           </p>
           <p class="modal__name">
             <label class="visually-hidden" for="comment">Текст вопроса</label>
