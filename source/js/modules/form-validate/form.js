@@ -96,7 +96,6 @@ export class Form {
     form.noValidate = true;
 
     form.addEventListener('submit', (event) => {
-      event.preventDefault();
       this._onFormSubmit(event, callback);
     });
 
