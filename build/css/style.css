@@ -1579,9 +1579,9 @@ button,
   margin-right: 5px;
 }
 
-.main-footer__wrapper {
+.main-footer {
   padding: 50px 30px 42px;
-  max-width: 1920px;
+  width: 100%;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
@@ -1825,17 +1825,41 @@ button,
   display: none;
 }
 
-.wrapper {
+.wrapper__container {
   min-height: 880px;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("/img/background-desktop.jpg");
-  background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("/img/background-desktop.jpg");
-  background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("/img/background-desktop.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0)));
+  background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
+  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
   z-index: 1;
 }
 
-.advantages__wrapper {
+@supports (background-image: url("../img/background-desktop.webp")) {
+  .wrapper__container {
+    background-image: url("../img/background-desktop.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .wrapper__container {
+      background-image: url("../img/background-desktop@2x.webp");
+    }
+}
+}
+
+@supports not (background-image: url("../img/background-desktop.webp")) {
+  .wrapper__container {
+    background-image: url("../img/background-desktop.jpg");
+  }
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .wrapper__container {
+      background-image: url("../img/background-desktop@2x.jpg");
+    }
+}
+}
+
+.advantages {
   margin: 0;
   padding: 119px 50px;
 }
@@ -2004,24 +2028,80 @@ button,
   min-height: 650px;
   padding: 47px 40px;
   list-style-type: none;
-}
-
-.product__item--first {
-  background-image: url("/img/link-desktop-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.product__item--second {
-  background-image: url("/img/link-desktop-2.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+@supports (background-image: url("../img/link-desktop-1.webp")) {
+  .product__item--first {
+    background-image: url("../img/link-desktop-1.webp");
+  }
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .product__item--first {
+      background-image: url("../img/link-desktop-1@2x.webp");
+    }
+}
 }
 
-.product__item--third {
-  background-image: url("/img/link-desktop-3.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+@supports not (background-image: url("../img/link-desktop-1.webp")) {
+  .product__item--first {
+    background-image: url("../img/link-desktop-1.jpg");
+  }
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .product__item--first {
+      background-image: url("../img/link-desktop-1@2x.jpg");
+    }
+}
+}
+
+@supports (background-image: url("../img/link-desktop-2.webp")) {
+  .product__item--second {
+    background-image: url("../img/link-desktop-2.webp");
+  }
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .product__item--second {
+      background-image: url("../img/link-desktop-2@2x.webp");
+    }
+}
+}
+
+@supports not (background-image: url("../img/link-desktop-2.webp")) {
+  .product__item--second {
+    background-image: url("../img/link-desktop-2.jpg");
+  }
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .product__item--second {
+      background-image: url("../img/link-desktop-2@2x.jpg");
+    }
+}
+}
+
+@supports (background-image: url("../img/link-desktop-3.webp")) {
+  .product__item--third {
+    background-image: url("../img/link-desktop-3.webp");
+  }
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .product__item--third {
+      background-image: url("../img/link-desktop-3@2x.webp");
+    }
+}
+}
+
+@supports not (background-image: url("../img/link-desktop-3.webp")) {
+  .product__item--third {
+    background-image: url("../img/link-desktop-3.jpg");
+  }
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .product__item--third {
+      background-image: url("../img/link-desktop-3@2x.jpg");
+    }
+}
 }
 
 .product__heading {
@@ -2095,11 +2175,6 @@ button,
   gap: 20px 30px;
 }
 
-.form__name {
-  margin: 0;
-  padding: 0;
-}
-
 .form__input {
   padding: 13px 15px 15px;
   width: 100%;
@@ -2113,7 +2188,7 @@ button,
   border: none;
 }
 
-.form__name-index {
+.form__custom-textarea {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1/3;
@@ -2349,7 +2424,7 @@ button,
     display: none;
   }
 
-  .main-footer__wrapper {
+  .main-footer {
     padding: 50px 37px 55px 50px;
   }
 
@@ -2420,17 +2495,35 @@ button,
     margin-left: 45px;
   }
 
-  .wrapper {
+  .wrapper__container {
     min-height: 640px;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("/img/background-tablet.jpg");
-    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("/img/background-tablet.jpg");
-    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("/img/background-tablet.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 2;
   }
 
-  .advantages__wrapper {
+@supports (background-image: url("../img/background-tablet.webp")) {
+    .wrapper__container {
+      background-image: url("../img/background-tablet.webp");
+    }
+
+@media screen and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), screen and (max-width: 1023px) and (min-resolution: 144dpi), screen and (max-width: 1023px) and (min-resolution: 1.5dppx) {
+      .wrapper__container {
+        background-image: url("../img/background-tablet@2x.webp");
+      }
+}
+}
+
+@supports not (background-image: url("../img/background-tablet.webp")) {
+    .wrapper__container {
+      background-image: url("../img/background-tablet.jpg");
+    }
+
+@media screen and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), screen and (max-width: 1023px) and (min-resolution: 144dpi), screen and (max-width: 1023px) and (min-resolution: 1.5dppx) {
+      .wrapper__container {
+        background-image: url("../img/background-tablet@2x.jpg");
+      }
+}
+}
+
+  .advantages {
     padding: 80px 50px 70px;
   }
 
@@ -2495,17 +2588,77 @@ button,
     padding: 37px 45px;
   }
 
-  .product__item--first {
-    background-image: url("/img/link-tablet-1.jpg");
-  }
+@supports (background-image: url("../img/link-tablet-1.webp")) {
+    .product__item--first {
+      background-image: url("../img/link-tablet-1.webp");
+    }
 
-  .product__item--second {
-    background-image: url("/img/link-tablet-2.jpg");
-  }
+@media screen and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), screen and (max-width: 1023px) and (min-resolution: 144dpi), screen and (max-width: 1023px) and (min-resolution: 1.5dppx) {
+      .product__item--first {
+        background-image: url("../img/link-tablet-1@2x.webp");
+      }
+}
+}
 
-  .product__item--third {
-    background-image: url("/img/link-tablet-3.jpg");
-  }
+@supports not (background-image: url("../img/link-tablet-1.webp")) {
+    .product__item--first {
+      background-image: url("../img/link-tablet-1.jpg");
+    }
+
+@media screen and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), screen and (max-width: 1023px) and (min-resolution: 144dpi), screen and (max-width: 1023px) and (min-resolution: 1.5dppx) {
+      .product__item--first {
+        background-image: url("../img/link-tablet-1@2x.jpg");
+      }
+}
+}
+
+@supports (background-image: url("../img/link-tablet-2.webp")) {
+    .product__item--second {
+      background-image: url("../img/link-tablet-2.webp");
+    }
+
+@media screen and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), screen and (max-width: 1023px) and (min-resolution: 144dpi), screen and (max-width: 1023px) and (min-resolution: 1.5dppx) {
+      .product__item--second {
+        background-image: url("../img/link-tablet-2@2x.webp");
+      }
+}
+}
+
+@supports not (background-image: url("../img/link-tablet-2.webp")) {
+    .product__item--second {
+      background-image: url("../img/link-tablet-2.jpg");
+    }
+
+@media screen and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), screen and (max-width: 1023px) and (min-resolution: 144dpi), screen and (max-width: 1023px) and (min-resolution: 1.5dppx) {
+      .product__item--second {
+        background-image: url("../img/link-tablet-2@2x.jpg");
+      }
+}
+}
+
+@supports (background-image: url("../img/link-tablet-3.webp")) {
+    .product__item--third {
+      background-image: url("../img/link-tablet-3.webp");
+    }
+
+@media screen and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), screen and (max-width: 1023px) and (min-resolution: 144dpi), screen and (max-width: 1023px) and (min-resolution: 1.5dppx) {
+      .product__item--third {
+        background-image: url("../img/link-tablet-3@2x.webp");
+      }
+}
+}
+
+@supports not (background-image: url("../img/link-tablet-3.webp")) {
+    .product__item--third {
+      background-image: url("../img/link-tablet-3.jpg");
+    }
+
+@media screen and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), screen and (max-width: 1023px) and (min-resolution: 144dpi), screen and (max-width: 1023px) and (min-resolution: 1.5dppx) {
+      .product__item--third {
+        background-image: url("../img/link-tablet-3@2x.jpg");
+      }
+}
+}
 
   .product__heading {
     max-width: 150px;
@@ -2550,71 +2703,6 @@ button,
 
   .form__label-checkbox {
     margin-left: 25px;
-  }
-}
-
-@media screen and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), screen and (max-width: 1023px) and (min-resolution: 144dpi), screen and (max-width: 1023px) and (min-resolution: 1.5dppx) {
-  .wrapper {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("/img/background-tablet-2x.jpg");
-    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("/img/background-tablet-2x.jpg");
-    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("/img/background-tablet-2x.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 2;
-  }
-
-  .wrapper {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("/img/background-tablet.webp");
-    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("/img/background-tablet.webp");
-    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("/img/background-tablet.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 2;
-  }
-
-  .wrapper {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("/img/background-tablet-2x.webp");
-    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("/img/background-tablet-2x.webp");
-    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("/img/background-tablet-2x.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 2;
-  }
-
-  .product__item--first {
-    background-image: url("/img/link-tablet-1-2x.jpg");
-  }
-
-  .product__item--first {
-    background-image: url("/img/link-tablet-1.webp");
-  }
-
-  .product__item--first {
-    background-image: url("/img/link-tablet-1-2x.webp");
-  }
-
-  .product__item--second {
-    background-image: url("/img/link-tablet-2-2x.jpg");
-  }
-
-  .product__item--second {
-    background-image: url("/img/link-tablet-2.webp");
-  }
-
-  .product__item--second {
-    background-image: url("/img/link-tablet-2-2x.webp");
-  }
-
-  .product__item--third {
-    background-image: url("/img/link-tablet-3-2x.jpg");
-  }
-
-  .product__item--third {
-    background-image: url("/img/link-tablet-3.webp");
-  }
-
-  .product__item--third {
-    background-image: url("/img/link-tablet-3-2x.webp");
   }
 }
 
@@ -2716,7 +2804,7 @@ button,
     margin-top: 5px;
   }
 
-  .main-footer__wrapper {
+  .main-footer {
     padding: 0;
     padding-bottom: 35px;
   }
@@ -2889,7 +2977,7 @@ button,
     border-radius: 3px;
   }
 
-  .advantages__wrapper {
+  .advantages {
     padding: 50px 25px 10px;
   }
 
@@ -3042,100 +3130,113 @@ button,
     display: none;
   }
 
-  .wrapper {
+  .wrapper__container {
     min-height: 560px;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("/img/background-mobile.jpg");
-    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("/img/background-mobile.jpg");
-    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("/img/background-mobile.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 3;
   }
+
+@supports (background-image: url("../img/background-mobile.webp")) {
+    .wrapper__container {
+      background-image: url("../img/background-mobile.webp");
+    }
+
+@media screen and (max-width: 374px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 374px) and (-o-min-device-pixel-ratio: 3/2), screen and (max-width: 374px) and (min-resolution: 144dpi), screen and (max-width: 374px) and (min-resolution: 1.5dppx) {
+      .wrapper__container {
+        background-image: url("../img/background-mobile@2x.webp");
+      }
+}
+}
+
+@supports not (background-image: url("../img/background-mobile.webp")) {
+    .wrapper__container {
+      background-image: url("../img/background-mobile.jpg");
+    }
+
+@media screen and (max-width: 374px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 374px) and (-o-min-device-pixel-ratio: 3/2), screen and (max-width: 374px) and (min-resolution: 144dpi), screen and (max-width: 374px) and (min-resolution: 1.5dppx) {
+      .wrapper__container {
+        background-image: url("../img/background-mobile@2x.jpg");
+      }
+}
+}
 
   .product__title-index {
     max-width: 200px;
   }
 
-  .product__item--first {
-    background-image: url("/img/link-mobile-1.jpg");
-  }
+@supports (background-image: url("../img/link-mobile-1.webp")) {
+    .product__item--first {
+      background-image: url("../img/link-mobile-1.webp");
+    }
 
-  .product__item--second {
-    background-image: url("/img/link-mobile-2.jpg");
-  }
+@media screen and (max-width: 374px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 374px) and (-o-min-device-pixel-ratio: 3/2), screen and (max-width: 374px) and (min-resolution: 144dpi), screen and (max-width: 374px) and (min-resolution: 1.5dppx) {
+      .product__item--first {
+        background-image: url("../img/link-mobile-1@2x.webp");
+      }
+}
+}
 
-  .product__item--third {
-    background-image: url("/img/link-mobile-3.jpg");
-  }
+@supports not (background-image: url("../img/link-mobile-1.webp")) {
+    .product__item--first {
+      background-image: url("../img/link-mobile-1.jpg");
+    }
+
+@media screen and (max-width: 374px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 374px) and (-o-min-device-pixel-ratio: 3/2), screen and (max-width: 374px) and (min-resolution: 144dpi), screen and (max-width: 374px) and (min-resolution: 1.5dppx) {
+      .product__item--first {
+        background-image: url("../img/link-mobile-1@2x.jpg");
+      }
+}
+}
+
+@supports (background-image: url("../img/link-mobile-2.webp")) {
+    .product__item--second {
+      background-image: url("../img/link-mobile-2.webp");
+    }
+
+@media screen and (max-width: 374px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 374px) and (-o-min-device-pixel-ratio: 3/2), screen and (max-width: 374px) and (min-resolution: 144dpi), screen and (max-width: 374px) and (min-resolution: 1.5dppx) {
+      .product__item--second {
+        background-image: url("../img/link-mobile-2@2x.webp");
+      }
+}
+}
+
+@supports not (background-image: url("../img/link-mobile-2.webp")) {
+    .product__item--second {
+      background-image: url("../img/link-mobile-2.jpg");
+    }
+
+@media screen and (max-width: 374px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 374px) and (-o-min-device-pixel-ratio: 3/2), screen and (max-width: 374px) and (min-resolution: 144dpi), screen and (max-width: 374px) and (min-resolution: 1.5dppx) {
+      .product__item--second {
+        background-image: url("../img/link-mobile-2@2x.jpg");
+      }
+}
+}
+
+@supports (background-image: url("../img/link-mobile-3.webp")) {
+    .product__item--third {
+      background-image: url("../img/link-mobile-3.webp");
+    }
+
+@media screen and (max-width: 374px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 374px) and (-o-min-device-pixel-ratio: 3/2), screen and (max-width: 374px) and (min-resolution: 144dpi), screen and (max-width: 374px) and (min-resolution: 1.5dppx) {
+      .product__item--third {
+        background-image: url("../img/link-mobile-3@2x.webp");
+      }
+}
+}
+
+@supports not (background-image: url("../img/link-mobile-3.webp")) {
+    .product__item--third {
+      background-image: url("../img/link-mobile-3.jpg");
+    }
+
+@media screen and (max-width: 374px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 374px) and (-o-min-device-pixel-ratio: 3/2), screen and (max-width: 374px) and (min-resolution: 144dpi), screen and (max-width: 374px) and (min-resolution: 1.5dppx) {
+      .product__item--third {
+        background-image: url("../img/link-mobile-3@2x.jpg");
+      }
+}
+}
 
   .product__toggel {
     width: 40px;
     height: 40px;
-  }
-}
-
-@media screen and (max-width: 374px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 374px) and (-o-min-device-pixel-ratio: 3/2), screen and (max-width: 374px) and (min-resolution: 144dpi), screen and (max-width: 374px) and (min-resolution: 1.5dppx) {
-  .wrapper {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("/img/background-mobile-2x.jpg");
-    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("/img/background-mobile-2x.jpg");
-    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("/img/background-mobile-2x.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 3;
-  }
-
-  .wrapper {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("/img/background-mobile.webp");
-    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("/img/background-mobile.webp");
-    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("/img/background-mobile.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 3;
-  }
-
-  .wrapper {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("/img/background-mobile-2x.webp");
-    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("/img/background-mobile-2x.webp");
-    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("/img/background-mobile-2x.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 3;
-  }
-
-  .product__item--first {
-    background-image: url("/img/link-mobile-1-2x.jpg");
-  }
-
-  .product__item--first {
-    background-image: url("/img/link-mobile-1.webp");
-  }
-
-  .product__item--first {
-    background-image: url("/img/link-mobile-1-2x.webp");
-  }
-
-  .product__item--second {
-    background-image: url("/img/link-mobile-2-2x.jpg");
-  }
-
-  .product__item--second {
-    background-image: url("/img/link-mobile-2.webp");
-  }
-
-  .product__item--second {
-    background-image: url("/img/link-mobile-2-2x.webp");
-  }
-
-  .product__item--third {
-    background-image: url("/img/link-mobile-3-2x.jpg");
-  }
-
-  .product__item--third {
-    background-image: url("/img/link-mobile-3.webp");
-  }
-
-  .product__item--third {
-    background-image: url("/img/link-mobile-3-2x.webp");
   }
 }
 
@@ -3150,88 +3251,5 @@ button,
 
   .custom-select__item:hover:not(.focus-visible) {
     background-color: rgba(0, 0, 0, 0.4);
-  }
-}
-
-@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .wrapper {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("/img/background-desktop-2x.jpg");
-    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("/img/background-desktop-2x.jpg");
-    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("/img/background-desktop-2x.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 1;
-  }
-
-  .wrapper {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("/img/background-desktop.webp");
-    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("/img/background-desktop.webp");
-    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("/img/background-desktop.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 1;
-  }
-
-  .wrapper {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("/img/background-desktop-2x.webp");
-    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("/img/background-desktop-2x.webp");
-    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("/img/background-desktop-2x.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 1;
-  }
-
-  .product__item--first {
-    background-image: url("/img/link-desktop-1-2x.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  .product__item--first {
-    background-image: url("/img/link-desktop-1.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  .product__item--first {
-    background-image: url("/img/link-desktop-1-2x.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  .product__item--second {
-    background-image: url("/img/link-desktop-2-2x.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  .product__item--second {
-    background-image: url("/img/link-desktop-2.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  .product__item--second {
-    background-image: url("/img/link-desktop-2-2x.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  .product__item--third {
-    background-image: url("/img/link-desktop-3-2x.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  .product__item--third {
-    background-image: url("/img/link-desktop-3.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  .product__item--third {
-    background-image: url("/img/link-desktop-3-2x.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
   }
 }
