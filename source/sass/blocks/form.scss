@@ -83,11 +83,6 @@
   }
 }
 
-// .form__name {
-//   margin: 0;
-//   padding: 0;
-// }
-
 .form__input {
   padding: 13px 15px 15px;
   width: 100%;
@@ -135,7 +130,7 @@
 
 .form__toggel {
   margin-top: 7px;
-  min-height: 45px;
+  max-height: 45px;
   max-width: 265px;
   padding: 15px 25px 13px;
   font-family: "Roboto Condensed", "Arial", sans-serif;

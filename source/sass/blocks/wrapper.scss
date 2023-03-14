@@ -28,7 +28,7 @@
       background-image: url("../img/background-tablet.webp");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/background-tablet@2x.webp");
+        background-image: url("../img/background-tablet@2x.webp");
       }
     }
 
@@ -48,7 +48,7 @@
       background-image: url("../img/background-mobile.webp");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/background-mobile@2x.webp");
+        background-image: url("../img/background-mobile@2x.webp");
       }
     }
 
