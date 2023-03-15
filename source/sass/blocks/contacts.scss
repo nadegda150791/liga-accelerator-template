@@ -1,5 +1,5 @@
 .contacts {
-  max-width: 345px;
+  max-width: 308px;
   margin: 0;
   margin-right: 38px;
   padding: 0;
@@ -11,7 +11,7 @@
 
   @media screen and (max-width: 1023px) {
     margin-right: 38px;
-    max-width: 345px;
+    max-width: 308px;
   }
 
   @media screen and (max-width: 767px) {
@@ -56,7 +56,7 @@
 
 @media screen and (max-width: 767px) {
   .contacts__item-address {
-    max-width: 345px;
+    max-width: 300px;
     margin-bottom: 10px;
   }
 }
@@ -70,6 +70,14 @@
   color: rgba(255, 255, 255, 0.7);
   cursor: pointer;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media screen and (max-width: 767px) {
     font-size: 14px;
   }
@@ -77,22 +85,4 @@
 
 .contacts__link-address {
   line-height: 135%;
-}
-
-@media screen and (max-width: 1279px) {
-  br {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 1023px) {
-  br {
-    display: block;
-  }
-}
-
-@media screen and (max-width: 374px) {
-  br {
-    display: none;
-  }
 }

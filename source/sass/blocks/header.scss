@@ -40,6 +40,14 @@
   display: flex;
   color: $color-triadic-white;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .header__logo-icon {
@@ -78,7 +86,7 @@
   color: rgba(255, 255, 255, 0.7);
 }
 
-.header__link--toggel {
+.header__link--toggle {
   max-width: 160px;
   margin-left: 13px;
   margin-top: 5px;
@@ -94,6 +102,14 @@
   border: 1px solid $color-triadic-white;
   border-radius: 3px;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media screen and (max-width: 1023px) {
     display: none;

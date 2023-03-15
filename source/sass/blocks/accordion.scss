@@ -9,12 +9,12 @@
     transition: 0.4s;
   }
 
-  .accordion.active .panel {
+  .accordion.active .accordion__panel {
     max-height: 3000px;
     background: $color-black-pearl;
   }
 
-  .panel {
+  .accordion__panel {
     padding: 0;
     background-color: $color-black-pearl;
     max-height: 0;
@@ -36,9 +36,5 @@
 
   .accordion__title::after {
     transform: rotate(-90deg);
-  }
-
-  .active__title::after {
-    transform: rotate(0deg);
   }
 }

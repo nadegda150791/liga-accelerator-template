@@ -6,8 +6,12 @@ const initAccordeons = () => {
     const activeCls = 'active';
 
     title.addEventListener('click', () => {
-      items.forEach((item) => item.classList.remove(activeCls));
-      item.classList.add(activeCls);
+      if (item.classList.contains(activeCls)) {
+        item.classList.remove(activeCls);
+      } else {
+        items.forEach((item) => item.classList.remove(activeCls));
+        item.classList.add(activeCls);
+      }
     });
   });
 };

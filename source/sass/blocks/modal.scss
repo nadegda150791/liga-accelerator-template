@@ -1,6 +1,6 @@
 .modal {
   position: fixed;
-  padding-top: 30px;
+  padding-top: 47px;
   top: 0;
   right: 0;
   bottom: 0;
@@ -41,7 +41,7 @@
     align-items: center;
     width: 100%;
     min-height: 100%;
-    padding: 60px 40px;
+    padding: 6px 40px;
 
     @include vp-767 {
       padding: 60px 16px;
@@ -87,6 +87,14 @@
     background: $color-transparent;
     border: none;
     cursor: pointer;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   &--responsive {
@@ -152,90 +160,10 @@
   padding: 0;
 }
 
-.modal__input {
+.modal input {
   margin: 20px 0 0;
-  padding: 13px 15px 15px;
-  width: 100%;
-  font-family: "PT Mono", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: $color-default-white;
-  background: rgba(4, 20, 39, 0.15);
-  border-radius: 3px;
-  border: none;
 }
 
-.modal__input::placeholder {
-  color: $color-default-white;
-}
-
-.modal__textarea {
-  min-height: 155px;
+.modal textarea {
   margin-top: 20px;
-  padding: 23px 15px;
-  width: 100%;
-  font-family: "PT Mono", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: $color-default-white;
-  background: rgba(4, 20, 39, 0.15);
-  border-radius: 3px;
-  border: none;
-}
-
-.modal__textarea::placeholder {
-  color: $color-default-white;
-}
-
-.modal__toggel {
-  margin: 17px 0 0;
-  max-height: 45px;
-  padding: 15px 25px 11px;
-  width: 100%;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: $color-default-white;
-  background: $color-black-pearl;
-  border-radius: 3px;
-  border: none;
-  cursor: pointer;
-}
-
-.modal__checkbox {
-  display: flex;
-  position: relative;
-  margin-top: 22px;
-}
-
-.modal__mark {
-  position: absolute;
-  top: -2px;
-  left: 10px;
-  width: 15px;
-  height: 15px;
-  border: 1px solid $color-default-white;
-}
-
-.modal__input[type="checkbox"]:checked + .modal__mark {
-  position: absolute;
-  background-image: url("/img/svg/check-mark.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.modal__label-checkbox {
-  margin: -2px 0 0 36px;
-  font-family: "PT Mono", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  color: $color-default-white;
-  opacity: 0.8;
 }

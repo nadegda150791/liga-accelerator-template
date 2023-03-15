@@ -77,6 +77,14 @@
   background: $color-deep-sky-blue;
   border-radius: 3px;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media screen and (max-width: 1023px) {
     margin-left: 45px;
   }
@@ -103,5 +111,13 @@
     color: $color-triadic-white;
     background: $color-deep-sky-blue;
     border-radius: 3px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
