@@ -83,12 +83,12 @@
   }
 }
 
-input {
+.form__custom-input input {
   padding: 13px 15px 15px;
 }
 
-input,
-textarea {
+.form__custom-input input,
+.form__custom-textarea textarea {
   width: 100%;
   font-family: "PT Mono", "Arial", sans-serif;
   font-weight: 400;
@@ -104,7 +104,7 @@ textarea {
   grid-column: 1/3;
 }
 
-textarea {
+.form__custom-textarea textarea {
   min-height: 155px;
   padding: 23px 15px;
 
@@ -119,8 +119,8 @@ textarea {
   }
 }
 
-input::placeholder,
-textarea::placeholder {
+.form__custom-input input::placeholder,
+.form__custom-textarea textarea::placeholder {
   color: $color-default-white;
 }
 
@@ -161,7 +161,7 @@ textarea::placeholder {
   }
 }
 
-.form__checkbox {
+.form__custom-toggle label {
   display: flex;
   position: relative;
   margin-top: 22px;
@@ -196,7 +196,7 @@ textarea::placeholder {
   top: -2px;
 }
 
-input[type="checkbox"]:checked + .form__mark {
+.form__custom-toggle input[type="checkbox"]:checked + .form__mark {
   position: absolute;
   background-image: url("../img/svg/check-mark.svg");
   background-repeat: no-repeat;

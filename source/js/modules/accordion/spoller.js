@@ -1,16 +1,16 @@
 const initAccordeons = () => {
   const items = document.querySelectorAll('.accordion');
 
-  items.forEach((item) => {
-    const title = item.querySelector('.accordion__title');
+  items.forEach((accordion) => {
+    const title = accordion.querySelector('.accordion__title');
     const activeCls = 'active';
 
     title.addEventListener('click', () => {
-      if (item.classList.contains(activeCls)) {
-        item.classList.remove(activeCls);
+      if (accordion.classList.contains(activeCls)) {
+        accordion.classList.remove(activeCls);
       } else {
         items.forEach((item) => item.classList.remove(activeCls));
-        item.classList.add(activeCls);
+        accordion.classList.add(activeCls);
       }
     });
   });

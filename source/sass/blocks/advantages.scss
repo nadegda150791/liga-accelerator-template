@@ -30,6 +30,7 @@
   min-height: 300px;
   border: 1px solid $color-whisper;
   list-style-type: none;
+  color: $color-default-white;
 
   &:hover,
   &:focus {
@@ -135,7 +136,7 @@
   color: $color-triadic-white;
 }
 
-.advantages__item:hover .advantages__item-description {
+.advantages__item:hover p {
   color: $color-triadic-white;
 }
 

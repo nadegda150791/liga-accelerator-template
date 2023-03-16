@@ -1847,6 +1847,7 @@ button,
   min-height: 300px;
   border: 1px solid #ebebeb;
   list-style-type: none;
+  color: #ffffff;
 }
 
 .advantages__item:hover,
@@ -1895,7 +1896,7 @@ button,
   color: #f2f5f6;
 }
 
-.advantages__item:hover .advantages__item-description {
+.advantages__item:hover p {
   color: #f2f5f6;
 }
 
@@ -2158,12 +2159,12 @@ button,
   gap: 20px 30px;
 }
 
-input {
+.form__custom-input input {
   padding: 13px 15px 15px;
 }
 
-input,
-textarea {
+.form__custom-input input,
+.form__custom-textarea textarea {
   width: 100%;
   font-family: "PT Mono", "Arial", sans-serif;
   font-weight: 400;
@@ -2181,33 +2182,33 @@ textarea {
   grid-column: 1/3;
 }
 
-textarea {
+.form__custom-textarea textarea {
   min-height: 155px;
   padding: 23px 15px;
 }
 
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
+.form__custom-input input::-webkit-input-placeholder,
+.form__custom-textarea textarea::-webkit-input-placeholder {
   color: #ffffff;
 }
 
-input::-moz-placeholder,
-textarea::-moz-placeholder {
+.form__custom-input input::-moz-placeholder,
+.form__custom-textarea textarea::-moz-placeholder {
   color: #ffffff;
 }
 
-input:-ms-input-placeholder,
-textarea:-ms-input-placeholder {
+.form__custom-input input:-ms-input-placeholder,
+.form__custom-textarea textarea:-ms-input-placeholder {
   color: #ffffff;
 }
 
-input::-ms-input-placeholder,
-textarea::-ms-input-placeholder {
+.form__custom-input input::-ms-input-placeholder,
+.form__custom-textarea textarea::-ms-input-placeholder {
   color: #ffffff;
 }
 
-input::placeholder,
-textarea::placeholder {
+.form__custom-input input::placeholder,
+.form__custom-textarea textarea::placeholder {
   color: #ffffff;
 }
 
@@ -2238,7 +2239,7 @@ textarea::placeholder {
   opacity: 0.3;
 }
 
-.form__checkbox {
+.form__custom-toggle label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2259,7 +2260,7 @@ textarea::placeholder {
   top: -2px;
 }
 
-input[type=checkbox]:checked + .form__mark {
+.form__custom-toggle input[type=checkbox]:checked + .form__mark {
   position: absolute;
   background-image: url("../img/svg/check-mark.svg");
   background-repeat: no-repeat;
@@ -2675,7 +2676,7 @@ input[type=checkbox]:checked + .form__mark {
     margin-bottom: 25px;
   }
 
-  textarea {
+  .form__custom-textarea textarea {
     padding: 29px 15px 15px;
   }
 
@@ -2684,7 +2685,7 @@ input[type=checkbox]:checked + .form__mark {
     padding: 16px 25px 10px;
   }
 
-  .form__checkbox {
+  .form__custom-toggle label {
     margin-top: 17px;
   }
 
@@ -3096,7 +3097,7 @@ input[type=checkbox]:checked + .form__mark {
     gap: 19px;
   }
 
-  textarea {
+  .form__custom-textarea textarea {
     margin-top: 1px;
     min-height: 180px;
     padding: 24px 15px;
@@ -3107,7 +3108,7 @@ input[type=checkbox]:checked + .form__mark {
     width: 100%;
   }
 
-  .form__checkbox {
+  .form__custom-toggle label {
     margin-top: 6px;
   }
 
