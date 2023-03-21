@@ -31,6 +31,11 @@
 
 .logo-footer__icon {
   margin-right: 15px;
+
+  @media screen and (max-width: 767px) {
+    margin-right: 0;
+    margin-left: 6px;
+  }
 }
 
 .logo-footer__text {

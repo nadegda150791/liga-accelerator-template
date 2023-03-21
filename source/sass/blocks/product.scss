@@ -65,181 +65,19 @@
 
 .product__item {
   position: relative;
-  min-height: 650px;
-  padding: 47px 40px;
   list-style-type: none;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.product__img {
+  position: relative;
+  min-height: 650px;
+  object-fit: cover;
 
   @media screen and (max-width: 1023px) {
     min-height: 250px;
-    padding: 37px 45px;
-  }
-
-  @media screen and (max-width: 767px) {
-    padding: 26px 30px;
-  }
-}
-
-.product__item--first {
-  @supports (background-image: url("../img/link-desktop-1.webp")) {
-    background-image: url("../img/link-desktop-1.webp");
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/link-desktop-1@2x.webp");
-    }
-  }
-
-  @supports not (background-image: url("../img/link-desktop-1.webp")) {
-    background-image: url("../img/link-desktop-1.jpg");
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/link-desktop-1@2x.jpg");
-    }
-  }
-
-  @media screen and (max-width: 1023px) {
-    @supports (background-image: url("../img/link-tablet-1.webp")) {
-      background-image: url("../img/link-tablet-1.webp");
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/link-tablet-1@2x.webp");
-      }
-    }
-
-    @supports not (background-image: url("../img/link-tablet-1.webp")) {
-      background-image: url("../img/link-tablet-1.jpg");
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/link-tablet-1@2x.jpg");
-      }
-    }
-  }
-
-  @media screen and (max-width: 374px) {
-    @supports (background-image: url("../img/link-mobile-1.webp")) {
-      background-image: url("../img/link-mobile-1.webp");
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/link-mobile-1@2x.webp");
-      }
-    }
-
-    @supports not (background-image: url("../img/link-mobile-1.webp")) {
-      background-image: url("../img/link-mobile-1.jpg");
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/link-mobile-1@2x.jpg");
-      }
-    }
-  }
-}
-
-.product__item--second {
-  @supports (background-image: url("../img/link-desktop-2.webp")) {
-    background-image: url("../img/link-desktop-2.webp");
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/link-desktop-2@2x.webp");
-    }
-  }
-
-  @supports not (background-image: url("../img/link-desktop-2.webp")) {
-    background-image: url("../img/link-desktop-2.jpg");
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/link-desktop-2@2x.jpg");
-    }
-  }
-
-  @media screen and (max-width: 1023px) {
-    @supports (background-image: url("../img/link-tablet-2.webp")) {
-      background-image: url("../img/link-tablet-2.webp");
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/link-tablet-2@2x.webp");
-      }
-    }
-
-    @supports not (background-image: url("../img/link-tablet-2.webp")) {
-      background-image: url("../img/link-tablet-2.jpg");
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/link-tablet-2@2x.jpg");
-      }
-    }
-  }
-
-  @media screen and (max-width: 374px) {
-    @supports (background-image: url("../img/link-mobile-2.webp")) {
-      background-image: url("../img/link-mobile-2.webp");
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/link-mobile-2@2x.webp");
-      }
-    }
-
-    @supports not (background-image: url("../img/link-mobile-2.webp")) {
-      background-image: url("../img/link-mobile-2.jpg");
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/link-mobile-2@2x.jpg");
-      }
-    }
-  }
-}
-
-.product__item--third {
-  @supports (background-image: url("../img/link-desktop-3.webp")) {
-    background-image: url("../img/link-desktop-3.webp");
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/link-desktop-3@2x.webp");
-    }
-  }
-
-  @supports not (background-image: url("../img/link-desktop-3.webp")) {
-    background-image: url("../img/link-desktop-3.jpg");
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/link-desktop-3@2x.jpg");
-    }
-  }
-
-  @media screen and (max-width: 1023px) {
-    @supports (background-image: url("../img/link-tablet-3.webp")) {
-      background-image: url("../img/link-tablet-3.webp");
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/link-tablet-3@2x.webp");
-      }
-    }
-
-    @supports not (background-image: url("../img/link-tablet-3.webp")) {
-      background-image: url("../img/link-tablet-3.jpg");
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/link-tablet-3@2x.jpg");
-      }
-    }
-  }
-
-  @media screen and (max-width: 374px) {
-    @supports (background-image: url("../img/link-mobile-3.webp")) {
-      background-image: url("../img/link-mobile-3.webp");
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/link-mobile-3@2x.webp");
-      }
-    }
-
-    @supports not (background-image: url("../img/link-mobile-3.webp")) {
-      background-image: url("../img/link-mobile-3.jpg");
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/link-mobile-3@2x.jpg");
-      }
-    }
+    width: 100%;
   }
 }
 
@@ -254,15 +92,18 @@
 }
 
 .product__heading {
+  position: absolute;
   max-width: 170px;
-  margin: 0;
+  margin: 47px 40px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
   color: $color-default-white;
+  z-index: 1;
 
   @media screen and (max-width: 1023px) {
+    margin: 37px 45px;
     max-width: 150px;
   }
 
@@ -270,6 +111,7 @@
     max-width: 135px;
     font-size: 18px;
     line-height: 30px;
+    margin: 26px 30px;
   }
 }
 

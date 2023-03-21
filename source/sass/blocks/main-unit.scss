@@ -46,7 +46,7 @@
 
 .main-unit__content {
   max-width: 685px;
-  margin: 0 0 62px;
+  margin: 0 0 47px;
   font-family: "PT Mono", "Arial", sans-serif;
   font-weight: 400;
   font-size: 22px;
@@ -54,7 +54,7 @@
   color: $color-triadic-white;
 
   @media screen and (max-width: 1023px) {
-    margin-bottom: 73px;
+    margin-bottom: 57px;
   }
 
   @media screen and (max-width: 767px) {
@@ -65,7 +65,9 @@
 }
 
 .main-unit__info {
+  display: block;
   padding: 16px 27px 17px;
+  max-width: 411px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;

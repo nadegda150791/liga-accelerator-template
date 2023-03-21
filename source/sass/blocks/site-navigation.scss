@@ -16,6 +16,7 @@
     display: flex;
     justify-content: end;
     margin: 0;
+    flex-wrap: wrap;
   }
 }
 
@@ -26,8 +27,12 @@
   @media screen and (max-width: 1023px) {
     width: 40px;
     height: 40px;
-    margin-right: 18px;
+    margin: 8px 18px 6px 0;
     text-align: center;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-top: 2px;
   }
 }
 
@@ -53,16 +58,6 @@
 
 .site-navigation__link-icon {
   vertical-align: middle;
-  margin-right: 5px;
-
-  @media screen and (max-width: 1023px) {
-    margin-top: 10px;
-    margin-right: 1px;
-  }
-
-  @media screen and (max-width: 767px) {
-    margin-top: 5px;
-  }
 }
 
 @media screen and (max-width: 1023px) {
