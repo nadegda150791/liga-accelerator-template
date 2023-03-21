@@ -558,6 +558,10 @@ button,
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .wrapper {
@@ -1924,6 +1928,7 @@ button,
   text-transform: uppercase;
   color: #00b2ff;
   border: 1px solid #00b2ff;
+  background: none;
   border-radius: 3px;
   cursor: pointer;
 }
@@ -2164,6 +2169,14 @@ button,
   display: flex;
   position: relative;
   margin-top: 22px;
+}
+
+.form__custom-toggle label:hover {
+  opacity: 0.6;
+}
+
+.form__custom-toggle label:active {
+  opacity: 0.3;
 }
 
 .form__mark {
@@ -2836,9 +2849,9 @@ input:-webkit-autofill {
     background-color: #041827;
     max-height: 0;
     overflow: hidden;
-    -webkit-transition: max-height 0.2s ease-out;
-    -o-transition: max-height 0.2s ease-out;
-    transition: max-height 0.2s ease-out;
+    -webkit-transition: max-height 0.5s ease-out;
+    -o-transition: max-height 0.5s ease-out;
+    transition: max-height 0.5s ease-out;
   }
 
   .accordion__title::before,
@@ -2850,11 +2863,11 @@ input:-webkit-autofill {
     right: 0;
     top: 4px;
     background: #f8fdff;
-    -webkit-transition: -webkit-transform 0.3s ease 0s;
-    transition: -webkit-transform 0.3s ease 0s;
-    -o-transition: transform 0.3s ease 0s;
-    transition: transform 0.3s ease 0s;
-    transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+    -webkit-transition: -webkit-transform 0.5s ease 0s;
+    transition: -webkit-transform 0.5s ease 0s;
+    -o-transition: transform 0.5s ease 0s;
+    transition: transform 0.5s ease 0s;
+    transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
   }
 
   .accordion__title::after {

@@ -19,7 +19,7 @@
     background-color: $color-black-pearl;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    transition: max-height 0.5s ease-out;
   }
 
   .accordion__title::before,
@@ -31,7 +31,7 @@
     right: 0;
     top: 4px;
     background: $color-alice-blue;
-    transition: transform 0.3s ease 0s;
+    transition: transform 0.5s ease 0s;
   }
 
   .accordion__title::after {

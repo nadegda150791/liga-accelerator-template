@@ -189,6 +189,14 @@
   position: relative;
   margin-top: 22px;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media screen and (max-width: 1023px) {
     margin-top: 17px;
   }
