@@ -1,4 +1,5 @@
 .form {
+  position: relative;
   padding: 164px 50px 249px;
   background: linear-gradient(-41deg, $color-deep-sky-blue-two 1259px, $color-allports 10px);
 
@@ -285,12 +286,18 @@
   margin-top: -2px;
 }
 
+.form__custom--modal {
+  margin-top: 82px;
+}
+
 .form--modal {
   margin: 0;
   padding: 0;
 }
 
 .form__toggle--modal {
+  position: absolute;
+  bottom: 36px;
   margin: 17px 0 0;
   padding: 15px 25px 11px;
   width: 100%;
@@ -300,4 +307,13 @@
 input:-webkit-autofill {
   -webkit-box-shadow: inset 0 0 0 50px $color-pacific-blue;
   -webkit-text-fill-color: #ffffff;
+}
+
+.form__custom-toggle input:focus + .form__mark {
+  outline: 2px solid;
+  order: 10;
+}
+
+.form__label-checkbox:focus {
+  outline: 2px solid;
 }

@@ -26,7 +26,7 @@
 
 .header__wrapper-index {
   display: grid;
-  grid-template-columns: 31% 50% 16%;
+  grid-template-columns: 30% 51% 16%;
   max-width: 1220px;
   margin: auto;
   align-items: center;
@@ -38,7 +38,6 @@
 }
 
 .header__logo-link {
-  margin-top: -2px;
   display: flex;
   color: $color-triadic-white;
   cursor: pointer;
@@ -62,7 +61,7 @@
   }
 
   @media screen and (max-width: 767px) {
-    margin-top: -14px;
+    margin-top: -4px;
     width: 35px;
     height: 35px;
   }
