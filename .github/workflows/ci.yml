@@ -19,7 +19,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          npm сi
+          npm i
       - name: Run lint and build
         run: |
           npm run build
